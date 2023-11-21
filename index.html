@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./assest/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Fredericka+the+Great&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantillas</title>
+</head>
+<body>
+    <div class="main">
+        <div class="contentendorMain">
+            
+            <!-- Video -->
+            <video id="video-container" class="video-container" muted loop autoplay>
+                <source src="./assest/vdo/space.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+
+            <div class="tarjetaLogin">
+                <div class="botoneraAuth">
+                    <button class="btn10">Ingresar</button>
+                    <button class="btn10">Registrarse</button>
+                </div>
+                <div class="grupoDatos">
+                    <div class="datos">
+                        <input type="input" class="campo" placeholder="Nombre" name="nombre" id='nombre' required />
+                        <label for="nombre" class="lbl_campo">Nombre</label>
+                    </div>
+                    <div class="datos">
+                        <input type="input" class="campo" placeholder="Pass" name="pass" id='pass' required />
+                        <label for="pass" class="lbl_campo">Contraseña</label>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button type="submit" class="btn10">Enviar</button>
+                </div>
+            </div>
+
+            <div class="logo">
+                <img src="./assest/img/Eclipse.png" alt="logo">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var video = document.getElementById("video-container");
+        video.playbackRate = 0.8; // Ajusta el valor según la velocidad deseada
+    </script>
+    
+</body>
+</html>

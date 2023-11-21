@@ -1,0 +1,71 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+    flex-direction: column;
+    background: url('./img/hixs_pattern_evolution.png');
+    background-repeat: repeat;
+    position: relative;
+    
+    .contentendorMain{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+        .video-container{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /*z-index: -1;  Establece un índice Z menor que los elementos de texto */
+            opacity: 0.6; /* Establece la opacidad del video */
+        }
+        .tarjetaLogin {
+            z-index: 1;
+            padding: 40px 0;
+            background: url('./img/blackorchid.png');
+            background-repeat: repeat;
+            display: flex;
+            flex-direction: column;
+            border: 5px double #444;
+            border-radius: 0px 0px 50px 50px;
+            width: 500px;
+            box-shadow: -10px 10px 200px 0px rgba(255, 108, 0, 0.8);
+
+            .botoneraAuth{
+                margin: 0 auto;
+            }
+
+            .grupoDatos{
+                margin: 0 auto 20px auto;
+            }
+
+            .submit{
+                margin: 0 auto;
+            }
+        }
+        .logo{
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            margin: 0 auto;
+
+            img{
+                opacity: .9;
+                animation: rotar 120s linear infinite;
+                vertical-align: top;
+                width: 500px;
+                position: absolute;
+                top: -400px;
+            }
+        }
+    }
+}

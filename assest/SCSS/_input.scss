@@ -1,0 +1,64 @@
+$primary: #ff8800;
+$secondary: #6d3600;
+$white: #fff;
+$gray: #fff;
+.datos {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.campo {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $white;
+  padding: 6px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  font-weight: 700;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .lbl_campo {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.lbl_campo {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 1s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.campo:focus {
+  ~ .lbl_campo {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 1s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  //padding: 6px 0;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.campo{
+  &:required,&:invalid { box-shadow:none; }
+}
