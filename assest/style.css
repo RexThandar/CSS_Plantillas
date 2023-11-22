@@ -130,7 +130,6 @@ h1 {
 
 .campo:focus {
   font-weight: 700;
-  border-width: 3px;
   -o-border-image: linear-gradient(to right, #ff8800, #6d3600);
      border-image: linear-gradient(to right, #ff8800, #6d3600);
   border-image-slice: 1;

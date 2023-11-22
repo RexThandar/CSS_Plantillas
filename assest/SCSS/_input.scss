@@ -52,9 +52,7 @@ $gray: #fff;
     color: $primary;
     font-weight:700;    
   }
-  //padding: 6px 0;  
   font-weight: 700;
-  border-width: 3px;
   border-image: linear-gradient(to right, $primary,$secondary);
   border-image-slice: 1;
 }
